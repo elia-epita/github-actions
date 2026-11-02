@@ -7,19 +7,20 @@ on:
   pull_request:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: list the files with checkout
+      - name: list the filew with
         run: ls
         shell: bash
 
   goodbye:
     runs-on: ubuntu-latest
     steps:
-      - name: list the files without checkout
+      - name: goodbye world
         run: ls
         shell: bash
