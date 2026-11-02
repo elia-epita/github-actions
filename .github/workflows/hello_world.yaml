@@ -14,13 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: list the filew with
-        run: ls
+      - name: hello world
+        run: echo "Hello World"
         shell: bash
 
   goodbye:
     runs-on: ubuntu-latest
     steps:
       - name: goodbye world
-        run: ls
+        run: echo "Goodbye World"
         shell: bash
